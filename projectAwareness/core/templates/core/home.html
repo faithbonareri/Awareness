@@ -1,0 +1,5 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<h2 class="mt-4">Welcome {{ request.user.username }}</h2>
+<a class="btn btn-warning mt-3" href="{% url 'logout' %}">Logout</a>
+{% endblock %}
